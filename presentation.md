@@ -247,7 +247,7 @@ They make can be understood in terms of our regex assumptions.
 # implementation time!
 
 ```scala
-trait ExprHasKleene[A] extends Kleene[A] {
+trait ExprHasKleene[A] extends Kleene[Expr[A]] {
   def zero = Nul
   def one = Empty
   
@@ -401,7 +401,7 @@ val fortyTwo = v(42.toByte)
 
 val intel = v('I'.toByte) * v('I'.toByte) * fortyTwo * zero * fourBytes
 val motoral = v('M'.toByte * v('M'.toByte) * zero * fortyTwo * fourBytes
-pval png = intel + motorola
+val png = intel + motorola
 ```
 
 ---
