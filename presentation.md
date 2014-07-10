@@ -401,7 +401,7 @@ val fortyTwo = v(42.toByte)
 
 val intel = v('I'.toByte) * v('I'.toByte) * fortyTwo * zero * fourBytes
 val motoral = v('M'.toByte * v('M'.toByte) * zero * fortyTwo * fourBytes
-val png = intel + motorola
+val tiff = intel + motorola
 ```
 
 ---
